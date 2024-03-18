@@ -39,22 +39,18 @@ style: |
   }
 </style>
 
-# **Point développements**
+## Point développements
 
 ***12/03/2024***
 
 Julien Gribonvald - Coordinateur Technique ESUP
 Arnaud Deman - Architecte et développeur ESUP
 <!--ts-->
-* [<strong>Point développements</strong>](#point-développements)
-   * [Du contexte à l'environnement de dev](#du-contexte-à-lenvironnement-de-dev)
-   * [Perspectives](#perspectives)
-   * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">Pour tout savoir</a>](https://avenirs-esr.github.io/dev-doc/)
-      * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">https://avenirs-esr.github.io/dev-doc/</a>](https://avenirs-esr.github.io/dev-doc/)
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: ardem, at: lun. 18 mars 2024 17:23:33 CET -->
-
+   * [Point développements](docs/2024-03-12-Point_d_etape_devs.md#point-développements)
+   * [Du contexte à l'environnement de dev](docs/2024-03-12-Point_d_etape_devs.md#du-contexte-à-lenvironnement-de-dev)
+   * [Perspectives](docs/2024-03-12-Point_d_etape_devs.md#perspectives)
+   * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">Pour tout savoir</a>](docs/2024-03-12-Point_d_etape_devs.mdhttps://avenirs-esr.github.io/dev-doc/)
+      * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">https://avenirs-esr.github.io/dev-doc/</a>](docs/2024-03-12-Point_d_etape_devs.mdhttps://avenirs-esr.github.io/dev-doc/)
 <!--te-->
 
 ---

@@ -27,6 +27,12 @@ jobs:
       - name: Copy images directory (if exists)
         run: if [[ -d img ]]; then cp -R img build/img; fi
 
+      - name: TOC
+        run: |
+          curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/0.8.0/gh-md-toc -o gh-md-toc
+          chmod a+x gh-md-toc
+          ./gh-md-toc --insert --no-backup --hide-footer docs/*
+          rm gh-md-toc
       - name: Marp Build (README)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
@@ -34,20 +40,7 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: Marp Build (README.pdf)
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: docs/2024-03-12-Point_d_etape_devs.md --allow-local-files -o build/README.pdf
-        env:
-          MARP_USER: root:root
-
-      - name: Marp Build (README.pptx)
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: docs/2024-03-12-Point_d_etape_devs.md --allow-local-files -o build/README.pptx
-        env:
-          MARP_USER: root:root
-
+     
       - name: Check if docs folder exists
         id: docs-folder-exists
         run: bash -c "[[ -d docs ]] ; echo \"has_docs=\$?\" >> \"$GITHUB_OUTPUT\""
