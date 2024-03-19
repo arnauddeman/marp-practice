@@ -31,13 +31,8 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
-          ./gh-md-toc --insert --no-backup docs/2024-03-12-Point_d_etape_devs.md
+          files=`grep "<\!\-\-ts" -l docs/*`; for f in $files; do ./gh-md-toc --insert --no-backup --hide-footer $f; done
           rm gh-md-toc
-     
-
-      - name: ls
-        id: ls
-        run: bash -c "ls -R "
 
      
       - name: Check if docs folder exists
@@ -52,6 +47,10 @@ jobs:
         env:
           MARP_USER: root:root
 
+      - name: ls
+        id: ls
+        run: bash -c "ls -R"
+      
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
         uses: rossjrw/pr-preview-action@v1
