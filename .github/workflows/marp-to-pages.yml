@@ -33,10 +33,6 @@ jobs:
           chmod a+x gh-md-toc
           ./gh-md-toc --insert --no-backup docs/2024-03-12-Point_d_etape_devs.md
           rm gh-md-toc
-      
-      - uses: "stefanzweifel/git-auto-commit-action@v4"
-        with:
-            commit_message: Auto update markdown TOC
       - name: Marp Build (README)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:

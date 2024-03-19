@@ -134,6 +134,6 @@ header: Perspectives
 <!--
 header: Ressources
 -->
-## [Pour tout savoir](https://avenirs-esr.github.io/dev-doc/)
+ [Pour tout savoir](https://avenirs-esr.github.io/dev-doc/)
 
-### https://avenirs-esr.github.io/dev-doc/
+https://avenirs-esr.github.io/dev-doc/
