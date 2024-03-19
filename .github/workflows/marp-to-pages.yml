@@ -27,7 +27,7 @@ jobs:
       - name: Copy images directory (if exists)
         run: if [[ -d img ]]; then cp -R img build/img; fi
 
-      - name: TOC
+      - name: Toc generation
         run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
@@ -39,7 +39,6 @@ jobs:
           args: docs/2024-03-12-Point_d_etape_devs.md -o build/index.html
         env:
           MARP_USER: root:root
-
      
       - name: Check if docs folder exists
         id: docs-folder-exists
