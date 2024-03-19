@@ -17,10 +17,15 @@ style: |
     display: flex;
     justify-content: space-between;
   }
-  .list-date {
+  .pres-date {
     color:grey;
     font-style: italic;
     font-size:.8em
+    
+  }
+  .presentations-list{
+    border: 1px solid;
+    padding-top: 1em;
   }
 ---
 <!--
@@ -40,9 +45,9 @@ _class:
 
 # Presentations list 
 
-
-<span class="list-date">2024-03-12</span> - Point d'étape
-
+<div class="presentations-list">
+<span class="pres-date">2024-03-12</span> - Point d'étape
+</div>
 <!-- {{TOC}} -->
 
 
