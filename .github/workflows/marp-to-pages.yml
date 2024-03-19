@@ -35,7 +35,7 @@ jobs:
           
           rm gh-md-toc
       - name: Generate index file 
-        run: if [[ -f build/docs/2024-03-12-Point_d_etape_devs.html ]]; then cp build/docs/2024-03-12-Point_d_etape_devs.html build/index.html; fi
+        run: cp build/docs/2024-03-12-Point_d_etape_devs.html build/index.html
      
       - name: Check if docs folder exists
         id: docs-folder-exists
