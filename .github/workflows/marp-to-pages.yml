@@ -31,14 +31,11 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
-          ./gh-md-toc --insert --no-backup docs/2024-03-12-Point_d_etape_devs.md
+          files=`grep "<\!\-\-ts" -l docs/*`; for f in $files; do ./gh-md-toc --insert --no-backup --hide-footer $f; done
+          
           rm gh-md-toc
-      - name: Marp Build (README)
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: docs/2024-03-12-Point_d_etape_devs.md -o build/index.html
-        env:
-          MARP_USER: root:root
+      - name: Generate index file 
+        run: if [[ -f build/docs/2024-03-12-Point_d_etape_devs.html ]]; then cp build/docs/2024-03-12-Point_d_etape_devs.html build/index.html; fi
      
       - name: Check if docs folder exists
         id: docs-folder-exists
