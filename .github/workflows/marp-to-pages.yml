@@ -47,10 +47,14 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: index file
-        id: index-file
-        run: if [[ -f ./build/docs/2024-03-12-Point_d_etape_devs.html ]]; then cp -R ./build/docs/2024-03-12-Point_d_etape_devs.html build/index.html && echo "Found" || echo "Not found" ;fi
-      
+      - name: Marp Build index from README.md
+        uses: docker://marpteam/marp-cli:v3.0.2
+        with:
+          args: README.md -o build/index.html
+        env:
+          MARP_USER: root:root
+  
+        
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
         uses: rossjrw/pr-preview-action@v1
