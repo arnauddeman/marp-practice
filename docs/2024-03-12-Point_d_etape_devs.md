@@ -42,7 +42,6 @@ style: |
 ## Point développements
 
 ***12/03/2024***
-xx
 Julien Gribonvald - Coordinateur Technique ESUP
 Arnaud Deman - Architecte et développeur ESUP
 

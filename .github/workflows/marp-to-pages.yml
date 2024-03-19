@@ -31,7 +31,7 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/0.8.0/gh-md-toc -o gh-md-toc
           chmod a+x gh-md-toc
-          files=`grep "<\!\-\-ts" -l docs/*`; for f in $files; do ./gh-md-toc --insert --no-backup --hide-footer $f; done
+          ./gh-md-toc --insert --no-backup docs/2024-03-12-Point_d_etape_devs.md
           rm gh-md-toc
       
       - uses: "stefanzweifel/git-auto-commit-action@v4"
