@@ -33,6 +33,10 @@ jobs:
           chmod a+x gh-md-toc
           files=`grep "<\!\-\-ts" -l docs/*`; for f in $files; do ./gh-md-toc --insert --no-backup --hide-footer $f; done
           rm gh-md-toc
+      
+      - uses: "stefanzweifel/git-auto-commit-action@v4"
+        with:
+            commit_message: Auto update markdown TOC
       - name: Marp Build (README)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
