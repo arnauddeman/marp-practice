@@ -45,21 +45,8 @@ style: |
 Julien Gribonvald - Coordinateur Technique ESUP
 Arnaud Deman - Architecte et développeur ESUP
 
----
-### Table of Content
 <!--ts-->
-   * [Point développements](#point-développements)
-      * [Table of Content](#table-of-content)
-   * [Du contexte à l'environnement de dev](#du-contexte-à-lenvironnement-de-dev)
-   * [Perspectives](#perspectives)
-   * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">Pour tout savoir</a>](https://avenirs-esr.github.io/dev-doc/)
-      * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">https://avenirs-esr.github.io/dev-doc/</a>](https://avenirs-esr.github.io/dev-doc/)
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Tue Mar 19 08:54:47 UTC 2024 -->
-
-<!--te-->
-
+ <!--te-->
 
 ---
 
