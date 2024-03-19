@@ -49,6 +49,15 @@ Arnaud Deman - Architecte et développeur ESUP
 ## FOO
 AVANT
 <!--ts-->
+   * [Point développements](#point-développements)
+   * [FOO](#foo)
+   * [Du contexte à l'environnement de dev](#du-contexte-à-lenvironnement-de-dev)
+   * [Perspectives](#perspectives)
+   * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">Pour tout savoir</a>](https://avenirs-esr.github.io/dev-doc/)
+      * [<a href="https://avenirs-esr.github.io/dev-doc/" rel="nofollow">https://avenirs-esr.github.io/dev-doc/</a>](https://avenirs-esr.github.io/dev-doc/)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: ardem, at: mardi 19 mars 2024, 09:49:06 (UTC+0100) -->
 
 <!--te-->
 APRES
