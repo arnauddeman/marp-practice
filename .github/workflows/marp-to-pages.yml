@@ -37,7 +37,7 @@ jobs:
 
       - name: ls
         id: ls
-        run: bash -c "ls -R >> \"$GITHUB_OUTPUT\""
+        run: bash -c "ls -R "
 
      
       - name: Check if docs folder exists
