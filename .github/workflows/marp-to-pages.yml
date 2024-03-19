@@ -35,7 +35,7 @@ jobs:
           
           rm gh-md-toc
       - name: Generate index file 
-        run: cp build/docs/2024-03-12-Point_d_etape_devs.html build/index.html
+        run: ls -R; cp build/docs/2024-03-12-Point_d_etape_devs.html build/index.html
      
       - name: Check if docs folder exists
         id: docs-folder-exists
