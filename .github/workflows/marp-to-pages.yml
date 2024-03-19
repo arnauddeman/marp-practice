@@ -49,7 +49,7 @@ jobs:
 
       - name: index file
         id: index-file
-        run: if [[ -f ./build/docs ]]; then cp -R 2024-03-12-Point_d_etape_devs.html build/index.html; fi
+        run: if [[ -f ./build/docs/2024-03-12-Point_d_etape_devs.html ]]; then cp -R ./build/docs/2024-03-12-Point_d_etape_devs.html build/index.html && echo "Found" || echo "Not found" ;fi
       
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
