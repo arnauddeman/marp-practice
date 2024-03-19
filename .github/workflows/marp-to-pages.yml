@@ -34,6 +34,11 @@ jobs:
           ./gh-md-toc --insert --no-backup docs/2024-03-12-Point_d_etape_devs.md
           rm gh-md-toc
      
+
+      - name: ls
+        id: ls
+        run: ls -R >> \"$GITHUB_OUTPUT\""
+
      
       - name: Check if docs folder exists
         id: docs-folder-exists
