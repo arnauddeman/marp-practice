@@ -8,11 +8,7 @@ _class:
 footer: ""
 header: '<div>![](https://avenirs-esr.github.io/dev-doc/assets/images/avenir-esr-logo_medium.jpg) ![](https://www.esup-portail.org/sites/default/files/logo-esupportail_1.png)</div> Avenirs-ESR - ePortfolio'
 style: |
-  section::after {
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
+  
   header {
     display: flex;
   }
@@ -34,13 +30,11 @@ style: |
   .presentation {
     color: black;
   }
-  a {
+  .presentations-list a {
     text-decoration: none;
     color: #0c72b4;
   }
-  a:visited {
-    color:#69b7ea;
-  }
+  
 ---
 <!--
 theme: gaia
