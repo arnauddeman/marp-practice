@@ -6,7 +6,7 @@ _class:
   - invert
   - lead
 footer: ""
-header: '![height:50px](https://avenirs-esr.github.io/dev-doc/assets/images/avenir-esr-logo_medium.jpg) ![height:50px](https://www.esup-portail.org/sites/default/files/logo-esupportail_1.png) Avenirs-ESR - ePortfolio'
+header: '<div>![](https://avenirs-esr.github.io/dev-doc/assets/images/avenir-esr-logo_medium.jpg) ![](https://www.esup-portail.org/sites/default/files/logo-esupportail_1.png)</div> Avenirs-ESR - ePortfolio'
 style: |
   section::after {
     left: 0;
@@ -15,7 +15,10 @@ style: |
   }
   header {
     display: flex;
-    justify-content: space-between;
+  }
+  header img {
+    height:50px;
+    margin-right:1em;
   }
   .pres-date {
     color:grey;
@@ -41,19 +44,10 @@ _backgroundColor: white
 _color: black
 -->
 
-<!--
-_class:
- - lead
- - invert
--->
 
-# Presentations list 2
+# Presentations list
 
 <div class="presentations-list">
-
-
 <!-- {{TOC}} -->
-<div class="presentation"><a href="./docs/2023-03-12-Point_d_etape_devs.html" target="_blank"><span class="pres-date">2023-03-12</span> - Point d'étape / développements</a></div>
-<div class="presentation"><a href="./docs/2024-03-12-Point_d_etape_devs.html" target="_blank"><span class="pres-date">2024-03-12</span> - Une autre presentation</a></div>
 </div>
 
