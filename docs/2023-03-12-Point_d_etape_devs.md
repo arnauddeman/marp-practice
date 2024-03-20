@@ -2,7 +2,7 @@
 marp: true
 theme: gaia
 paginate: true
-avenirs-toc:Une autre presentation
+avenirs-toc: Point d'étape / développements
 _class:
   - invert
   - lead

@@ -48,11 +48,7 @@ jobs:
           MARP_USER: root:root
 
       - name: Marp Build index from README.md
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: README.md -o build/index.html
-        env:
-          MARP_USER: root:root
+        run: bash ./scripts/generate-toc.sh -v
   
         
       - name: Deploy preview

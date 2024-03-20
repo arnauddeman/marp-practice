@@ -24,8 +24,12 @@ style: |
     
   }
   .presentations-list{
-    border: 1px solid;
     padding-top: 1em;
+    display:flex;
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
   }
 ---
 <!--
@@ -46,8 +50,11 @@ _class:
 # Presentations list 
 
 <div class="presentations-list">
-<span class="pres-date">2024-03-12</span> - Point d'étape
-</div>
-<!-- {{TOC}} -->
 
+
+<!-- {{TOC}} -->
+<div class="presentation"><a href="./docs/2023-03-12-Point_d_etape_devs.html" target="_blank"><span class="pres-date">2023-03-12</span> - Point d'étape / développements</a></div>
+<div class="presentation"><a href="./docs/2024-03-12-Point_d_etape_devs.html" target="_blank"><span class="pres-date">2024-03-12</span> - Une autre presentation</a></div>
+
+</div>
 
