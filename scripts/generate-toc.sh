@@ -62,15 +62,6 @@ do
 done
 
 sed -i -e "/TOC/r $TMP_FILE" $TARGET_FILE
-echo "----"
-ls -R 
-echo "----"
-echo "tmp file $TMP_FILE:"
-cat $TMP_FILE
-echo "----"
-echo "----"
-echo "Target file $TARGET_FILE:"
-cat $TARGET_FILE
-echo "----"
+
 
 log "done";
