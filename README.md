@@ -31,8 +31,15 @@ style: |
     display:flex;
     flex-direction: column;
   }
+  .presentation {
+    color: black;
+  }
   a {
     text-decoration: none;
+    color: #0c72b4;
+  }
+  a:visited {
+    color:#69b7ea;
   }
 ---
 <!--
@@ -49,5 +56,6 @@ _color: black
 
 <div class="presentations-list">
 <!-- {{TOC}} -->
+
 </div>
 
