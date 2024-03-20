@@ -47,10 +47,16 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: Marp Build index from README.md
+      - name: Insert Presentation list in README.md
         run: bash ./scripts/generate-toc.sh -v
   
-        
+      - name: Index from README
+        uses: docker://marpteam/marp-cli:v3.0.2
+        with:
+          args: README.md -o build/index.html
+        env:
+          MARP_USER: root:root
+
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
         uses: rossjrw/pr-preview-action@v1
